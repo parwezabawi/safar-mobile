@@ -208,9 +208,6 @@
 }
 
 @media (max-width: 34em) {
-  html {
-    /* overflow-x: hidden; */
-  }
   .header {
     background-color: #2a9d8f;
   }
@@ -461,7 +458,7 @@
     /* display: none; */
 
     background-color: rgba(42, 157, 144, 0.208);
-    height: 100%;
+    max-height: 100%;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -473,7 +470,7 @@
   }
 
   .form-img-box {
-    width: 100%;
+    max-width: 100%;
     min-height: 25rem;
     grid-row: 1;
   }
@@ -481,4 +478,82 @@
   /* form {
     background-color: blue;
   } */
+}
+
+@media (max-width: 29em) {
+  .btn-box {
+    margin-left: 0;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .plan-div {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-btn:link,
+  .plan-btn:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2a9d8f;
+    background-color: #555;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .plan-btn:hover,
+  .plan-btn:active {
+    background-color: #333;
+  }
+
+  .money-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .price-card {
+    background-color: #fff;
+    margin: 1px;
+    max-width: 100%;
+    min-height: 40rem;
+    border-radius: 9px;
+
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .money {
+    /* transform: scale(1.2); */
+    /* max-height: 45rem; */
+    max-width: 100%;
+    z-index: 2;
+    background: #2a9d8f;
+    padding: 3rem 0 0 3rem;
+  }
+
+  /* form {
+    padding: 0 2rem 0 0;
+  } */
+
+  form {
+    padding: 0 1.5rem;
+  }
+
+  input {
+    padding: 0.5rem 1rem;
+  }
+
+  .footer-main {
+    padding: 35px 15px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
 }
