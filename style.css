@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 /* Brand color: #2a9d8f */
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -54,7 +59,7 @@ body {
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +75,7 @@ nav {
 }
 
 .nav-logo {
-  width: 18rem;
+  max-width: 18rem;
   padding: 1rem;
 }
 
@@ -116,7 +121,7 @@ nav {
 }
 
 .text-box {
-  width: 50rem;
+  max-width: 50rem;
   margin-bottom: 2rem;
   margin-left: 9rem;
 }
@@ -229,7 +234,7 @@ nav {
   content: "";
   background-color: #aad8d2;
   height: 110%;
-  width: 78%;
+  max-width: 78%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -383,7 +388,7 @@ nav {
 }
 
 .tes-person {
-  width: 80px;
+  max-width: 80px;
   border-radius: 50%;
 }
 
@@ -418,7 +423,7 @@ nav {
 .price-card {
   background-color: #fff;
   margin: 1px;
-  width: 33rem;
+  max-width: 33rem;
   min-height: 40rem;
   border-radius: 9px;
 
@@ -429,8 +434,8 @@ nav {
 
 .money {
   /* transform: scale(1.2); */
-  height: 45rem;
-  width: 35rem;
+  max-height: 45rem;
+  max-width: 35rem;
   z-index: 2;
   background: #2a9d8f;
   padding: 3rem 0 0 3rem;
@@ -542,7 +547,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   /* padding: 0rem 8rem; */
   background-color: #2a9d8f;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .form-img {
@@ -551,7 +556,7 @@ nav {
 }
 
 form {
-  /* background-color: blue; */
+  background-color: #2a9d8f;
   max-width: 100%;
   /* height: 100%; */
   display: flex;
@@ -568,6 +573,7 @@ form {
   color: #ced4da;
   padding: 2rem;
   margin-left: 2rem;
+  background-color: #2a9d8f;
   /* margin-top: 2rem; */
 }
 
@@ -601,7 +607,7 @@ input::placeholder {
 form button {
   display: inline-block;
   height: 2rem;
-  width: 90%;
+  max-width: 90%;
   padding: 1.3rem 4rem;
   text-align: center;
   line-height: 9px;
@@ -617,7 +623,7 @@ form button {
   color: #ced4da;
   border-bottom: 1px solid #ced4da;
   margin-bottom: 2rem;
-  width: 150px;
+  max-width: 150px;
   padding: 1rem;
 
   transition: all 0.3s;
@@ -635,7 +641,7 @@ form button {
   text-transform: uppercase;
   height: 40px;
   line-height: -2;
-  width: 200px;
+  max-width: 200px;
   border-radius: 9px;
   color: #154f48;
   background-color: #d4ebe9;
@@ -652,7 +658,7 @@ form button {
 .overlay {
   background-color: rgba(42, 157, 144, 0.208);
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -686,7 +692,7 @@ body {
 ========================= */
 
 .footer {
-  width: 100%;
+  max-width: 100%;
 
   margin-top: 300px;
 
@@ -762,7 +768,7 @@ body {
 /* little circle beside logo */
 
 .logo-circle {
-  width: 16px;
+  max-width: 16px;
   height: 16px;
 
   border-radius: 50%;
